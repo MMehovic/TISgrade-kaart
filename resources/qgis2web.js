@@ -147,7 +147,7 @@ var featureOverlay = new ol.layer.Vector({
     updateWhileInteracting: true // optional, for instant visual feedback
 });
 
-var doHighlight = false;
+var doHighlight = true;
 var doHover = true;
 
 function createPopupField(currentFeature, currentFeatureKeys, layer) {
@@ -875,6 +875,23 @@ let measuring = false;
 
 
 //layerswitcher
+
+var layerSwitcher = new ol.control.LayerSwitcher({
+    activationMode: 'click',
+	startActive: true,
+	tipLabel: "Layers",
+    target: 'top-right-container',
+	collapseLabel: '»',
+	collapseTipLabel: 'Close'
+    });
+map.addControl(layerSwitcher);
+if (hasTouchScreen || isSmallScreen) {
+	document.addEventListener('DOMContentLoaded', function() {
+		setTimeout(function() {
+			layerSwitcher.hidePanel();
+		}, 500);
+	});	
+}
 
 
 

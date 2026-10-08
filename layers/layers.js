@@ -34,34 +34,34 @@ var wms_layers = [];
                             
                             
                           });
-var format_wegen293_1 = new ol.format.GeoJSON();
-var features_wegen293_1 = format_wegen293_1.readFeatures(json_wegen293_1, 
+var format_TISgrade_nwb_2892026_1 = new ol.format.GeoJSON();
+var features_TISgrade_nwb_2892026_1 = format_TISgrade_nwb_2892026_1.readFeatures(json_TISgrade_nwb_2892026_1, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_wegen293_1 = new ol.source.Vector({
+var jsonSource_TISgrade_nwb_2892026_1 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_wegen293_1.addFeatures(features_wegen293_1);
-var lyr_wegen293_1 = new ol.layer.Vector({
+jsonSource_TISgrade_nwb_2892026_1.addFeatures(features_TISgrade_nwb_2892026_1);
+var lyr_TISgrade_nwb_2892026_1 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_wegen293_1, 
-                style: style_wegen293_1,
-                popuplayertitle: 'wegen293',
+                source:jsonSource_TISgrade_nwb_2892026_1, 
+                style: style_TISgrade_nwb_2892026_1,
+                popuplayertitle: 'TISgrade_nwb_2892026',
                 interactive: true,
-    title: 'wegen293<br />\
-    <img src="styles/legend/wegen293_1_0.png" /> 0<br />\
-    <img src="styles/legend/wegen293_1_1.png" /> 1<br />\
-    <img src="styles/legend/wegen293_1_2.png" /> 3<br />\
-    <img src="styles/legend/wegen293_1_3.png" /> A<br />\
-    <img src="styles/legend/wegen293_1_4.png" /> B<br />\
-    <img src="styles/legend/wegen293_1_5.png" /> C<br />\
-    <img src="styles/legend/wegen293_1_6.png" /> D<br />\
-    <img src="styles/legend/wegen293_1_7.png" /> E<br />' });
+    title: 'TISgrade_nwb_2892026<br />\
+    <img src="styles/legend/TISgrade_nwb_2892026_1_0.png" /> 0<br />\
+    <img src="styles/legend/TISgrade_nwb_2892026_1_1.png" /> 1<br />\
+    <img src="styles/legend/TISgrade_nwb_2892026_1_2.png" /> 2<br />\
+    <img src="styles/legend/TISgrade_nwb_2892026_1_3.png" /> 3<br />\
+    <img src="styles/legend/TISgrade_nwb_2892026_1_4.png" /> 4<br />\
+    <img src="styles/legend/TISgrade_nwb_2892026_1_5.png" /> 5<br />\
+    <img src="styles/legend/TISgrade_nwb_2892026_1_6.png" /> 6<br />\
+    <img src="styles/legend/TISgrade_nwb_2892026_1_7.png" /> 7<br />' });
 
-lyr_pastel_0.setVisible(true);lyr_wegen293_1.setVisible(true);
-var layersList = [lyr_pastel_0,lyr_wegen293_1];
-lyr_wegen293_1.set('fieldAliases', {'qc_id': 'qc_id', 'id': 'id', 'cat': 'cat', });
-lyr_wegen293_1.set('fieldImages', {'qc_id': 'TextEdit', 'id': 'TextEdit', 'cat': 'TextEdit', });
-lyr_wegen293_1.set('fieldLabels', {'qc_id': 'no label', 'id': 'no label', 'cat': 'inline label - always visible', });
-lyr_wegen293_1.on('precompose', function(evt) {
+lyr_pastel_0.setVisible(true);lyr_TISgrade_nwb_2892026_1.setVisible(true);
+var layersList = [lyr_pastel_0,lyr_TISgrade_nwb_2892026_1];
+lyr_TISgrade_nwb_2892026_1.set('fieldAliases', {'qc_id': 'qc_id', 'id': 'id', 'cat': 'cat', });
+lyr_TISgrade_nwb_2892026_1.set('fieldImages', {'qc_id': 'TextEdit', 'id': 'TextEdit', 'cat': 'TextEdit', });
+lyr_TISgrade_nwb_2892026_1.set('fieldLabels', {'qc_id': 'no label', 'id': 'no label', 'cat': 'no label', });
+lyr_TISgrade_nwb_2892026_1.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });

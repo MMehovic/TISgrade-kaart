@@ -61,7 +61,7 @@ lyr_pastel_0.setVisible(true);lyr_TISgrade_nwb_2892026_1.setVisible(true);
 var layersList = [lyr_pastel_0,lyr_TISgrade_nwb_2892026_1];
 lyr_TISgrade_nwb_2892026_1.set('fieldAliases', {'qc_id': 'qc_id', 'id': 'id', 'cat': 'cat', });
 lyr_TISgrade_nwb_2892026_1.set('fieldImages', {'qc_id': 'TextEdit', 'id': 'TextEdit', 'cat': 'TextEdit', });
-lyr_TISgrade_nwb_2892026_1.set('fieldLabels', {'qc_id': 'no label', 'id': 'no label', 'cat': 'no label', });
+lyr_TISgrade_nwb_2892026_1.set('fieldLabels', {'qc_id': 'hidden field', 'id': 'hidden field', 'cat': 'inline label - always visible', });
 lyr_TISgrade_nwb_2892026_1.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
